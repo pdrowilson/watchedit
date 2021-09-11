@@ -1,9 +1,11 @@
 import * as S from './styles'
 
+import Featured from '../../components/Featured'
+
 function Home() {
   return (
     <S.HomeContainer>
-      <h1>Home Page</h1>
+      <Featured />
     </S.HomeContainer>
   )
 }

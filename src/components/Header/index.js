@@ -26,7 +26,7 @@ function Header() {
       <S.HeaderRight>
         <S.MenuSeparator />
         <S.Button onClick={toWatchlist}>
-          <Book />
+          <Book fontSize="small" />
           WATCHLIST
         </S.Button>
         <S.Avatar variant="rounded">PW</S.Avatar>
