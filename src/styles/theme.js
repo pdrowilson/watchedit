@@ -15,16 +15,5 @@ export default {
       xlarge: '2.0rem',
       xxlarge: '2.8rem'
     }
-  },
-  colors: {
-    // primary: '#5EB8E5',
-    // gradientBegin: '#5CD0E5',
-    // gradientEnd: '#5C9BE5',
-    // mainBg: '#FAFAFA',
-    // offWhite: '#FAFAFA',
-    // white: '#FFFFFF',
-    // black: '#2F2F2F',
-    // lightGray: '#939393',
-    // gray: '#555555'
   }
 }
