@@ -1,14 +1,20 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
+import * as S from './styles'
+
+import Header from './components/Header'
 import Home from './pages/Home'
-import Movie from './pages/Movie'
+import Watchlist from './pages/Watchlist'
 
 function Routes() {
   return (
     <Router>
+      <Header />
       <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/movie-details" component={Movie} exact />
+        <S.MainWrapper>
+          <Route path="/" component={Home} exact />
+          <Route path="/watchlist" component={Watchlist} />
+        </S.MainWrapper>
       </Switch>
     </Router>
   )
