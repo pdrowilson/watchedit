@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
     color: #dddddd;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font: 400 16px 'Poppins', sans-serif;
+    font: 400 16px 'Sora', sans-serif;
   }
   #root {
     min-height: 100vh;
