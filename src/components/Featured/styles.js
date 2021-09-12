@@ -5,7 +5,6 @@ export const FeaturedContainer = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 25px;
-  border: 1px solid gray;
 `
 export const GridWrapper = styled.div`
   width: 65%;
@@ -51,6 +50,7 @@ export const InfoContainer = styled.div`
     background-color: transparent;
     border-radius: 0;
     border-bottom: 2px solid var(--primary-color);
+    z-index: -1;
   }
 `
 export const ImgContainer = styled.div`
@@ -61,6 +61,7 @@ export const ImgContainer = styled.div`
   z-index: -11;
   > img {
     margin-left: auto;
+    filter: sepia(35%);
     opacity: 0.8;
     z-index: -10;
     width: 100%;

@@ -2,15 +2,15 @@ import * as S from './styles'
 import img from '../../assets/img-movie.jpg'
 import { Button } from '@material-ui/core'
 
-function Featured() {
+function Featured({ movie }) {
   return (
     <S.FeaturedContainer>
       <S.GridWrapper>
         <S.InfoContainer>
-          <p>2021</p>
-          <h1>Once Upon a Time... In Hollywood</h1>
+          <p>{movie.release_date.substring(0, 4)}</p>
+          <h1>{movie.original_title}</h1>
           <div>
-            <h2>7.7</h2>
+            <h2>{movie.vote_average}</h2>
             <span>10</span>
           </div>
           <div>
@@ -18,7 +18,10 @@ function Featured() {
           </div>
         </S.InfoContainer>
         <S.ImgContainer>
-          <img src={img} alt="img" />
+          <img
+            src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
+            alt={movie.title}
+          />
         </S.ImgContainer>
       </S.GridWrapper>
     </S.FeaturedContainer>
