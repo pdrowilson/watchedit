@@ -28,6 +28,8 @@ export const InfoContainer = styled.div`
     line-height: 1.2;
     text-shadow: 0px 1px 5px black;
     margin-top: 10px;
+    z-index: 99;
+    cursor: pointer;
   }
   > div {
     display: flex;
@@ -45,25 +47,32 @@ export const InfoContainer = styled.div`
     color: #4d4d4d;
     font-weight: 600;
   }
-  > div > Button {
+  > Button {
+    width: fit-content;
     color: white;
     background-color: transparent;
     border-radius: 0;
     border-bottom: 2px solid var(--primary-color);
-    z-index: -1;
+    margin-top: 25px;
   }
 `
 export const ImgContainer = styled.div`
   display: flex;
   grid-row: 1 / 2;
   grid-column: 5 / -1;
-  background-color: pink;
-  z-index: -11;
+  cursor: pointer;
   > img {
     margin-left: auto;
-    filter: sepia(35%);
+    filter: sepia(55%);
     opacity: 0.8;
-    z-index: -10;
     width: 100%;
   }
+`
+
+export const OverviewContainer = styled.div`
+  grid-row: 2;
+  grid-column: 2 / 10;
+  margin-top: 50px;
+  font-size: 16px;
+  color: #4d4d4d;
 `

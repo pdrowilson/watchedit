@@ -10,6 +10,7 @@ export const HeaderContainer = styled.div`
   padding: 15px 0;
   color: var(--white-color);
   background-color: var(--gray-color);
+  z-index: 999;
 `
 
 export const Logo = styled.div`

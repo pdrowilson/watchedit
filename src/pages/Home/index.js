@@ -1,3 +1,5 @@
+import circle from '../../assets/circle.png'
+import circleLines from '../../assets/circle-lines.png'
 import * as S from './styles'
 
 import Featured from '../../components/Featured'
@@ -21,11 +23,11 @@ function Home() {
   }, [])
   return (
     <S.HomeContainer>
-      <div>
-        {trendingMovieList.map((movie, key) => (
-          <Featured key={key} movie={movie} />
-        ))}
-      </div>
+      <img src={circle} alt="img" />
+      <img src={circleLines} alt="img" />
+      {trendingMovieList.map((movie, key) => (
+        <Featured key={key} movie={movie} />
+      ))}
     </S.HomeContainer>
   )
 }

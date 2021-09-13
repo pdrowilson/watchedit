@@ -1,5 +1,4 @@
 import * as S from './styles'
-import img from '../../assets/img-movie.jpg'
 import { Button } from '@material-ui/core'
 
 function Featured({ movie }) {
@@ -13,9 +12,7 @@ function Featured({ movie }) {
             <h2>{movie.vote_average}</h2>
             <span>10</span>
           </div>
-          <div>
-            <Button>Add to Watchlist</Button>
-          </div>
+          <Button>Add to Watchlist</Button>
         </S.InfoContainer>
         <S.ImgContainer>
           <img
@@ -23,6 +20,7 @@ function Featured({ movie }) {
             alt={movie.title}
           />
         </S.ImgContainer>
+        <S.OverviewContainer>{movie.overview}</S.OverviewContainer>
       </S.GridWrapper>
     </S.FeaturedContainer>
   )
