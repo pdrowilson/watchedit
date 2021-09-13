@@ -9,12 +9,12 @@ import { useTrending } from '../../hooks/useTrending'
 import { useEffect } from 'react'
 function Home() {
   const { trendingMovieList, trendingMovies } = useTrending()
+  console.log(trendingMovieList, 'trendingMovieList')
 
   useEffect(() => {
     async function getTrendingList() {
       try {
         await trendingMovies()
-        console.log(trendingMovieList, 'trendingMovieList')
       } catch (error) {
         alert('Ocorreu um erro ao buscar os items')
       }
