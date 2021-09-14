@@ -1,11 +1,33 @@
 import styled from 'styled-components'
 
 export const FeaturedContainer = styled.div`
-  display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 25px;
+  display: ${(props) => (props.inactive ? 'none' : 'flex')};
 `
+export const Arrow = styled.div`
+  > span {
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 40%;
+    width: auto;
+    :hover {
+      color: var(--primary-color);
+      transition: all 0.5s ease-in;
+    }
+  }
+  > span:nth-child(1) {
+    left: 3rem;
+    border-radius: 5px 0px 0px 5px;
+  }
+  > span:nth-child(2) {
+    right: 3rem;
+    border-radius: 5px 0px 0px 5px;
+  }
+`
+
 export const GridWrapper = styled.div`
   width: 65%;
   display: grid;
