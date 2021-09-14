@@ -2,10 +2,11 @@ import * as S from './styles'
 import { Button } from '@material-ui/core'
 
 function Slider({ activeIndex, trendingMovieList }) {
+  const active = activeIndex
   return (
     <>
       {trendingMovieList.map((movie, index) => (
-        <S.FeaturedContainer key={index} inactive={index != activeIndex}>
+        <S.FeaturedContainer key={index} active={index === active}>
           <S.GridWrapper>
             <S.InfoContainer>
               <p>{movie.release_date.substring(0, 4)}</p>

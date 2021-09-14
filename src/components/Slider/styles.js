@@ -4,7 +4,7 @@ export const FeaturedContainer = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 25px;
-  display: ${(props) => (props.inactive ? 'none' : 'flex')};
+  display: ${(props) => (props.active ? 'flex' : 'none')};
 `
 export const Arrow = styled.div`
   > span {
