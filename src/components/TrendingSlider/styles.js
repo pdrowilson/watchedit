@@ -74,8 +74,9 @@ export const InfoContainer = styled.div`
     color: white;
     background-color: transparent;
     border-radius: 0;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
     margin-top: 25px;
+    font-family: inherit;
   }
 `
 export const ImgContainer = styled.div`
