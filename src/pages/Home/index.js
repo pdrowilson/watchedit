@@ -3,6 +3,7 @@ import circleLines from '../../assets/circle-lines.png'
 import * as S from './styles'
 
 import TrendingSlider from '../../components/TrendingSlider'
+import WatchlistSlider from '../../components/WatchlistSlider'
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <img src={circle} alt="img" />
       <img src={circleLines} alt="img" />
       <TrendingSlider />
+      <WatchlistSlider />
     </S.HomeContainer>
   )
 }

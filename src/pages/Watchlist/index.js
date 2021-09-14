@@ -1,11 +1,11 @@
 import * as S from './styles'
 
-import WatchlistItem from '../../components/WatchlistItem'
+import WatchlistSlider from '../../components/WatchlistSlider'
 
 function Watchlist() {
   return (
     <S.WatchlistContainer>
-      <WatchlistItem />
+      <WatchlistSlider />
     </S.WatchlistContainer>
   )
 }
