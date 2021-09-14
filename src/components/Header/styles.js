@@ -26,26 +26,47 @@ export const HeaderLeft = styled.div`
   margin-left: 30px;
 `
 export const HeaderSearch = styled.div`
+  position: relative;
+  display: flex;
   flex: 0.5;
   opacity: 1;
   border-radius: 4px;
-  background-color: var(--white-color);
+  background-color: var(--lightgray-color);
   text-align: center;
-  display: flex;
   padding: 5px 25px 5px 15px;
-  color: var(--gray-color);
+  color: var(--white-color);
   border: 1px transparent solid;
   :focus-within {
-    border: 1px var(--primary-color) solid;
+    > div {
+      display: flex;
+    }
   }
   > input {
-    background-color: transparent;
+    background-color: var(--lightgray-color);
     border: 0;
-    min-width: 100%;
+    min-width: calc(100% - 25px);
     outline: 0;
     margin-left: 25px;
   }
 `
+export const CombBox = styled.div`
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 50px 20px;
+  background-color: var(--lightgray-color);
+  border-radius: 4px;
+  box-shadow: 0 0 0 1pt var(--lightgray-color);
+  min-width: 100%;
+  height: 95vh;
+  overflow: auto;
+  z-index: -10;
+`
+
 export const HeaderRight = styled.div`
   flex: 0.3;
   display: flex;

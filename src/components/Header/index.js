@@ -22,6 +22,13 @@ function Header() {
       <S.HeaderSearch>
         <Search />
         <input placeholder="Search..." />
+        <S.CombBox>
+          <li>11111111111111111</li>
+          <li>11111111111111111</li>
+          <li>11111111111111111</li>
+          <li>11111111111111111</li>
+          <li>11111111111111111</li>
+        </S.CombBox>
       </S.HeaderSearch>
       <S.HeaderRight>
         <S.MenuSeparator />
