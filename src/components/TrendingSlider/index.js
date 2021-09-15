@@ -1,27 +1,13 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
-import { useTrending } from '../../hooks/useTrending'
 import SliderContent from './SliderContent'
 import Arrows from './Arrows'
 
-function Featured() {
-  const { trendingMovieList, trendingMovies } = useTrending()
-
+function Featured({ trendingMovieList }) {
   const [activeIndex, setActiveIndex] = useState(0)
   const len = trendingMovieList.length - 1
 
   console.log(len, 'len')
-
-  useEffect(() => {
-    async function getTrendingList() {
-      try {
-        await trendingMovies()
-      } catch (error) {
-        alert('Ocorreu um erro ao buscar os items')
-      }
-    }
-    getTrendingList()
-  }, [])
 
   return (
     <>
