@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
-export const SliderContainer = styled.div`
+export const WatchlistWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 8rem;
-  margin-bottom: 50rem;
 `
 
 export const Header = styled.div`
@@ -50,4 +50,59 @@ export const SubtitleContainer = styled.div`
   margin-top: 1rem;
   font-size: 16px;
   color: #4d4d4d;
+`
+
+export const WatchlistSlider = styled.div`
+  margin-bottom: 20rem;
+  overflow-x: hidden;
+  transition: all 0.6s ease-in-out;
+`
+
+export const SliderContent = styled.div`
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+`
+export const ArrowContainer = styled.div`
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+
+  span:nth-child(1) {
+    margin-left: auto;
+  }
+`
+export const Arrows = styled.div`
+  width: 65%;
+  display: grid;
+
+  > span {
+    grid-column: -1;
+    grid-row: 1;
+  }
+
+  > span > .MuiSvgIcon-root {
+    font-size: 55px;
+    :hover {
+      color: var(--primary-color);
+    }
+  }
+`
+
+export const Row = styled.div`
+  grid-column: 1;
+  display: flex;
+  width: 210px;
+`
+
+export const Movie = styled.img`
+  width: 100%;
+  object-fit: contain;
+  transform: scale(0.95);
+  cursor: pointer;
+
+  :hover {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+  }
 `
